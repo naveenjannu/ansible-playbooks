@@ -1,0 +1,14 @@
+---
+- name: create a playscope file
+  hosts: all
+  vars:
+    - a: git
+    - b: present
+    - c: yes
+  tasks:
+    - name: create a apt 
+      apt:
+        name: "{{a}}"
+        state: "{{b}}"
+        update_cache: "{{c}}"
+...

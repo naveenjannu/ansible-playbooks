@@ -1,6 +1,6 @@
 ---
 - name: create directory and files into it
-  hosts: all
+  hosts: servers
   tasks:
     - name: create directory
       file:

@@ -1,0 +1,11 @@
+---
+- name: implementing host scope varibles in group vars
+  hosts: webserver
+  tasks:
+    - name: create a apt
+      apt:
+        name: "{{a}}"
+        state: "{{b}}"
+        update_cache: "{{c}}"
+...
+
